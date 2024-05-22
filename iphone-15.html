@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Celular </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="Inicio">
+        <button id="volver">
+            <a href="index.html"> volver</a>
+        </button>
+        <button class="adios">
+            Comprar
+        </button>
+    </div>
+
+    <div class="Nombre_celular">
+        <h1>iPhone-15</h1>
+    </div>
+    <div class="cuadro">
+        <br><br>
+        <div class="Imagen">
+            <img src="https://i.blogs.es/699e2a/analisis-iphone-15-pro-4/1200_800.jpeg" alt="">
+        </div>
+        <br>
+        <div class="inf_descripcion">
+            <div class="Informacion_1">
+                <h2>Pantalla</h2><p>Resolución FullHD+ (2.636 x 1.080 píxeles)</p>
+            </div>
+            <div class="Informacion_2">
+                <h2>Procesador</h2><p>Snapdragon 855+</p>
+            </div>
+            <div class="Informacion_3">
+                <h2>Precio</h2><h3>$800.000</h3>
+            </div>
+        </div>
+    </div>
+<div class="compre">
+    <h1>COMPRALO YA!!</h1>
+</div>
+<div class="gracias">
+    <h1>CRACIAS POR SU COMPRA!!</h1>
+</div>
+<div class="Final"></div>
+<script>
+    $(document).ready(function(){
+        $(".gracias").hide();
+    });
+    $(document).ready(function(){
+        $(".adios").click(function(event){
+            event.preventDefault();
+            $(".cuadro").hide();
+            $(".compre").hide();
+            $(".Nombre_celular").hide();
+            $(".gracias").show();
+        });
+    });
+</script>
+</body>
+</html>
